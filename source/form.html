@@ -36,7 +36,7 @@
       <h1 class="page__title form__title">Подбор программы</h1>
       <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="form__inner" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="form-group">
+        <fieldset class="form__group">
           <legend class="visually-hidden">Информация о питомнце</legend>
           <div class="form__list">
             <div class="form__field text-field">
@@ -54,7 +54,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="form-group">
+        <fieldset class="form__group">
           <legend class="visually-hidden">Ваши цели</legend>
           <div class="form__list">
             <div class="form__field radio">
@@ -72,8 +72,8 @@
           </div>
         </fieldset>
 
-        <fieldset class="form-group">
-          <legend class="form-group__title">Контактные данные (владельца кота)</legend>
+        <fieldset class="form__group">
+          <legend class="form__group--title">Контактные данные (владельца кота)</legend>
           <div class="form__list">
             <div class="form__field text-field">
               <label class="text-field__label" for="email">E-mail:*</label>
@@ -88,8 +88,8 @@
           </div>
         </fieldset>
 
-        <fieldset class="form-group">
-          <legend class="form-group__title">Комментарий</legend>
+        <fieldset class="form__group">
+          <legend class="form__group--title">Комментарий</legend>
           <div class="form__field text-field">
             <label class="text-field__label" for="comment-field"></label>
             <textarea class="text-field__control--textarea" name="comment" id="comment-field"
@@ -97,9 +97,9 @@
           </div>
         </fieldset>
 
-        <fieldset class="form-group">
-          <legend class="form-group__title">Дополнительно</legend>
-          <ul class="form__list">
+        <fieldset class="form__group">
+          <legend class="form__group-title">Дополнительно</legend>
+          <ul class="form__list list-reset">
             <li class="form__field checkbox">
               <input class="checkbox__control" type="checkbox" name="sweetener" id="sweetener" checked>
               <label class="checkbox__label" for="sweetener">Cахарозаменитель</label>
@@ -126,8 +126,8 @@
   <footer class="page-footer">
     <section class="contacts">
       <div class="contacts__address contacts__address-grey wrapper">
-        <p>Приглашаем к сотрудничеству дилеров!</p>
-        <address>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <p class="contacts__address-diler">Приглашаем к сотрудничеству дилеров!</p>
+        <address class="contacts__address-adds">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
       <div class="contacts__map">
         <img class="contacts__map-image" src="img/map-mobile.png" width="320" height="362" alt="Карта проезда" />
@@ -140,7 +140,7 @@
           <img class="footer-social__logo-image" src="img/footer-logo.svg" width="128" height="24"
             alt="Логотип футера интернет-магазина Кэт энерджи " />
         </a>
-        <ul class="footer-social__list social">
+        <ul class="footer-social__list social list-reset">
           <li class="social__item">
             <a class="social__link social__link-vk" href="#">
               <span>Вконтакте</span>

@@ -3,22 +3,21 @@
   font-family: inherit;
   line-height: 18px;
   text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
+  color: @white;
   text-transform: uppercase;
-  background-color: #68b738;
+  vertical-align: middle;
+  background-color: @color-green-500;
   border: none;
   text-decoration: none;
   padding: 11px 0;
-  box-sizing: border-box;
   width: 100%;
 
   &:hover {
-    background-color: #5eaa2f;
+    background-color: @color-green-600;
   }
 
   &:active {
-    background-color: #5eaa2f;
-    color: hsla(0, 0%, 100%, 0.3);
+    background-color: @color-green-600;
+    color: fade(@white, 30);
   }
 }
