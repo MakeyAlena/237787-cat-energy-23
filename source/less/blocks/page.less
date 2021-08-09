@@ -11,6 +11,9 @@
   font-weight: 400;
   color: @color-grey-300;
   min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 .page__title {
@@ -20,4 +23,11 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .page__body {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

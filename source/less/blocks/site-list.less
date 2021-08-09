@@ -1,4 +1,27 @@
 .site-list__link {
   display: inline-block;
-  padding-bottom: 24px;
+  color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    text-align: right;
+  }
+
+  .site-list__link {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__link {
+    font-size: 20px;
+    line-height: 30px;
+    color: @white;
+  }
 }

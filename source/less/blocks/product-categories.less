@@ -29,3 +29,20 @@
   text-transform: uppercase;
   padding: 20px 0;
 }
+
+
+@media (min-width: @tablet-width) {
+  .product-category__title {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}

@@ -8,3 +8,25 @@
 .step__description {
   font-family: @default-font;
 }
+
+@media (min-width: @tablet-width) {
+  .steps__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+  }
+
+  .steps__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .steps__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+  }
+}
