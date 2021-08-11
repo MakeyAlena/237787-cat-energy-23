@@ -1,7 +1,35 @@
-.page-header__logo-image:hover {
-  opacity: 0.8;
+.page-header {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 18px;
+  justify-content: space-between;
 }
 
-.page-header__logo-image:active {
-  opacity: 0.6;
+.page-header__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header--preview {
+    position: relative;
+  }
+
+  .page-header--preview::after {
+    content: "";
+    position: absolute;
+    min-height: 694px;
+    width: 50%;
+    background-image: url("../img/background/index-background-promo2x.jpeg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+  }
 }
