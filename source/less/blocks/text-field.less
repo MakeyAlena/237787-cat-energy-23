@@ -1,16 +1,55 @@
 .text-field {
-  font-size: 16px;
-  text-transform: uppercase;
   border: none;
   margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.text-field__label {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-right: 10px;
 }
 
 .text-field__control {
+  font-family: @custom-font;
   font-size: 16px;
   text-transform: uppercase;
+  border: 1px solid @color-grey-400;
+  padding: 13px 15px;
+  flex-grow: 1;
 }
 
 .text-field__control--textarea {
   font-size: 16px;
   text-transform: uppercase;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 90px;
+  font-family: @custom-font;
+  border: 1px solid @color-grey-400;
+}
+
+.text-field__label--textarea {
+  margin: 0;
+}
+
+
+@media (min-width: @tablet-width) {
+  .text-field__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .text-field__control {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .text-field__control--textarea {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

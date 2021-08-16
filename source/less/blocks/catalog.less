@@ -1,3 +1,7 @@
+.catalog__title {
+  margin-bottom: 40px;
+}
+
 .catalog__item {
   margin-bottom: 35px;
   display: flex;
@@ -52,6 +56,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .catalog__title {
+    margin-bottom: 90px;
+  }
+
   .catalog__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -59,9 +67,10 @@
   }
 
   .catalog__item {
-    flex-direction: column;
     background-color: @color-grey-100;
     padding: 0 38px;
+    position: relative;
+    flex-direction: column;
 
     &:last-child {
       background-color: @white;
@@ -71,10 +80,24 @@
   .card__image {
     display: inline-block;
     text-align: center;
+    position: absolute;
+    bottom: 355px;
+    left: 0;
+    width: 324px;
+    height: auto;
+  }
+
+  .card__info {
+    margin-top: 160px;
   }
 
   .card__title {
+    margin: 0 auto;
     text-align: center;
+    margin-bottom: 20px;
+    width: 145px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .card__title--link {
@@ -84,6 +107,81 @@
 
   .card__stats {
     font-size: 16px;
+    width: 100%;
+  }
+
+  .card-description__cell:last-child {
+    text-align: end;
+  }
+
+  .card__button {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .show-more__title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .show-more__description {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+  }
+
+  .catalog__item {
+    background-color: @color-grey-100;
+    padding: 0 38px;
+    position: relative;
+    flex-direction: column;
+
+    &:last-child {
+      background-color: @white;
+    }
+  }
+
+  .card__image {
+    width: 245px;
+  }
+
+  .card__info {
+    margin-top: 160px;
+  }
+
+  .card__title {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 145px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .card__title--link {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .card__stats {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .card-description__cell:last-child {
+    text-align: end;
+  }
+
+  .card__button {
+    margin-top: 20px;
+    margin-bottom: 40px;
   }
 
   .show-more__title {
