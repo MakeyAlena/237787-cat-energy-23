@@ -36,8 +36,7 @@
       <h1 class="page__title form__title">Подбор программы</h1>
       <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="form__inner" method="get" action="https://echo.htmlacademy.ru">
-        <div class="form__contener">
-        <fieldset class="form__group">
+        <fieldset class="form__group form__group--info">
           <legend class="visually-hidden">Информация о питомнце</legend>
           <div class="form__list">
             <div class="form__field text-field">
@@ -55,7 +54,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="form__group">
+        <fieldset class="form__group form__group--target">
           <legend class="visually-hidden">Ваши цели</legend>
           <div class="form__list">
             <div class="form__field radio">
@@ -72,7 +71,6 @@
             </div>
           </div>
         </fieldset>
-        </div>
 
         <fieldset class="form__group">
           <legend class="form__group--title">Контактные данные (владельца кота)</legend>
@@ -138,34 +136,36 @@
       </div>
     </section>
 
-    <section class="footer-social wrapper">
-      <a class="footer-social__logo">
-        <img class="footer-social__logo-image" src="img/logo/footer-logo.svg" width="128" height="24"
-          alt="Логотип футера интернет-магазина Кэт энерджи " />
-      </a>
-      <ul class="footer-social__list social list-reset">
-        <li class="social__item">
-          <a class="social__link social__link-vk" href="#">
-            <span class="visually-hidden">Вконтакте</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link-instagram" href="#">
-            <span class="visually-hidden">Инстаграмм</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link-fb" href="#">
-            <span class="visually-hidden">Фейсбук</span>
-          </a>
-        </li>
-      </ul>
-      <div class="footer__copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="copyright__text">HTML Academy</span>
-          <img class="footer-social__logo-image" src="img/logo/htmlacademy.svg" width="27" height="34"
-            alt="Логотип HTML Academy" />
+    <section class="footer-social">
+      <div class="footer-social__container wrapper">
+        <a class="footer-social__logo">
+          <img class="footer-social__logo-image" src="img/logo/footer-logo.svg" width="128" height="24"
+            alt="Логотип футера интернет-магазина Кэт энерджи " />
         </a>
+        <ul class="footer-social__list social list-reset">
+          <li class="social__item">
+            <a class="social__link social__link-vk" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link-instagram" href="#">
+              <span class="visually-hidden">Инстаграмм</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link-fb" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="copyright__text">HTML Academy</span>
+            <img class="footer-social__logo-image" src="img/logo/htmlacademy.svg" width="27" height="34"
+              alt="Логотип HTML Academy" />
+          </a>
+        </div>
       </div>
     </section>
   </footer>
