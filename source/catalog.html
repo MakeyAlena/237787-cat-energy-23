@@ -53,7 +53,7 @@
                 </tr>
                 <tr class="card-description__row">
                   <td class="card-description__cell">Вкус</td>
-                  <td class="card-description__cell">Курица</td>
+                  <td class="card-description__cell ">Курица</td>
                 </tr>
                 <tr class="card-description__row">
                   <td class="card-description__cell">Цена</td>
@@ -239,52 +239,63 @@
 
       <section class="add-product">
         <h2 class="add-product__title">Дополнительные товары</h2>
-        <ul class="add-product__list list-reset">
-          <li class="add-product__item">
-            <h3 class="add-product__item-title">Сахарозаменитель</h3>
-            <p class="add-product__count">1 упаковка (100 г)</p>
-            <p class="add-product__price">200 Р.</p>
-            <a class="add-product__button button" href="blank.html">Заказать</a>
-          </li>
-          <li class="add-product__item">
-            <h3 class="add-product__item-title">Питьевая вода</h3>
-            <p class="add-product__count">5 литров</p>
-            <p class="add-product__price">50 Р.</p>
-            <a class="add-product__button button" href="blank.html">Заказать</a>
-          </li>
-          <li class="add-product__item">
-            <h3 class="add-product__item-title">Молоко</h3>
-            <p class="add-product__count">1 литр</p>
-            <p class="add-product__price">100 Р.</p>
-            <a class="add-product__button button" href="blank.html">Заказать</a>
-          </li>
-          <li class="add-product__item">
-            <h3 class="add-product__item-title">Витамины</h3>
-            <p class="add-product__count">1 упаковка (30 г)</p>
-            <p class="add-product__price">300 Р.</p>
-            <a class="add-product__button button" href="blank.html">Заказать</a>
-          </li>
-        </ul>
-        <div class="add-product__gift">
-          <p class="add-product__text">Закажите все и получите чехол для кота в подарок!</p>
+        <div class="add-product__container">
+          <ul class="add-product__list list-reset">
+            <li class="add-product__item">
+              <h3 class="add-product__item-title">Сахарозаменитель</h3>
+              <div class="add-product___description">
+                <p class="add-product__count">1 упаковка (100 г)</p>
+                <p class="add-product__price">200 Р.</p>
+              </div>
+              <a class="add-product__button button" href="blank.html">Заказать</a>
+            </li>
+            <li class="add-product__item">
+              <h3 class="add-product__item-title">Питьевая вода</h3>
+              <div class="add-product___description">
+                <p class="add-product__count">5 литров</p>
+                <p class="add-product__price">50 Р.</p>
+              </div>
+              <a class="add-product__button button" href="blank.html">Заказать</a>
+            </li>
+            <li class="add-product__item">
+              <h3 class="add-product__item-title">Молоко</h3>
+              <div class="add-product___description">
+                <p class="add-product__count">1 литр</p>
+                <p class="add-product__price">100 Р.</p>
+              </div>
+              <a class="add-product__button button" href="blank.html">Заказать</a>
+            </li>
+            <li class="add-product__item">
+              <h3 class="add-product__item-title">Витамины</h3>
+              <div class="add-product___description">
+                <p class="add-product__count">1 упаковка (30 г)</p>
+                <p class="add-product__price">300 Р.</p>
+              </div>
+              <a class="add-product__button button" href="blank.html">Заказать</a>
+            </li>
+          </ul>
+          <div class="add-product__gift">
+            <p class="add-product__text">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
         </div>
       </section>
     </div>
   </main>
 
-    <footer class="page-footer">
-      <section class="contacts">
-        <div class="contacts__wrapper">
-          <div class="contacts__address wrapper">
-            <p class="contacts__address-diler">Приглашаем к сотрудничеству дилеров!</p>
-            <address class="contacts__address-add">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-          </div>
-          <img class="contacts__map contacts__map-image" src="img/map-mobile.png" width="320" height="362"
-            alt="Карта проезда" />
+  <footer class="page-footer">
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <div class="contacts__address contacts__address-grey wrapper">
+          <p class="contacts__address-diler">Приглашаем к сотрудничеству дилеров!</p>
+          <address class="contacts__address-add">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
-      </section>
+        <img class="contacts__map contacts__map-image" src="img/map-mobile.png" width="320" height="362"
+          alt="Карта проезда" />
+      </div>
+    </section>
 
-      <section class="footer-social wrapper">
+    <section class="footer-social">
+      <div class="footer-social__container wrapper">
         <a class="footer-social__logo">
           <img class="footer-social__logo-image" src="img/logo/footer-logo.svg" width="128" height="24"
             alt="Логотип футера интернет-магазина Кэт энерджи " />
@@ -292,17 +303,17 @@
         <ul class="footer-social__list social list-reset">
           <li class="social__item">
             <a class="social__link social__link-vk" href="#">
-              <span>Вконтакте</span>
+              <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link-instagram" href="#">
-              <span>Инстаграмм</span>
+              <span class="visually-hidden">Инстаграмм</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link-fb" href="#">
-              <span>Фейсбук</span>
+              <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
         </ul>
@@ -313,8 +324,9 @@
               alt="Логотип HTML Academy" />
           </a>
         </div>
-      </section>
-    </footer>
+      </div>
+    </section>
+  </footer>
 </body>
 
 </html>

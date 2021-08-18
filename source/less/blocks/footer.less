@@ -1,8 +1,11 @@
 .footer-social {
-  display: flex;
-  flex-direction: column;
   background-color: @color-grey-100;
   padding: 20px;
+}
+
+.footer-social__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-social__logo {
@@ -64,7 +67,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .footer-social {
+  .footer-social__container {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
