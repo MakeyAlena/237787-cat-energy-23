@@ -1,8 +1,5 @@
-.page-header {
-  display: flex;
+.page-header--container {
   padding-top: 10px;
-  padding-bottom: 18px;
-  justify-content: space-between;
 }
 
 .page-header__logo {
@@ -15,7 +12,31 @@
   }
 }
 
+.page-header__logo-image {
+  padding-bottom: 13px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header--container {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 72px;
+    padding-top: 20px;
+  }
+
+  .page-header__logo-image {
+    padding-top: 13px;
+  }
+}
+
 @media (min-width: @desktop-width) {
+  .page-header--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 177px;
+    padding-top: 47px;
+  }
+
   .page-header--preview {
     position: relative;
   }
