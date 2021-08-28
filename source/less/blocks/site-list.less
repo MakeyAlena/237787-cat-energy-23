@@ -18,12 +18,16 @@
 @media (min-width: @tablet-width) {
   .site-list {
     display: flex;
-    justify-content: space-between;
   }
 
   .site-list__item {
     border: none;
     text-align: end;
+    margin-right: 33px;
+
+    &:last-child {
+      margin-right: 0;
+    }
 
     &--current {
       position: relative;
@@ -32,7 +36,7 @@
         content: "";
         position: absolute;
         right: 0;
-        top: 54px;
+        bottom: 0;
         left: 0;
         height: 2px;
         background: @color-green-500;
@@ -52,6 +56,14 @@
     font-size: 20px;
     line-height: 30px;
     color: @white;
+  }
+
+  .site-list__item {
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   .site-list__item--current::after {
