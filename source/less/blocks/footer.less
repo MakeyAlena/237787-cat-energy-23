@@ -1,6 +1,7 @@
 .footer-social {
   background-color: @color-grey-100;
-  padding: 20px;
+  padding-top: 39px;
+  padding-bottom: 22px;
 }
 
 .footer-social__container {
@@ -10,14 +11,16 @@
 
 .footer-social__logo {
   display: inline-block;
-  margin-bottom: 30px;
   text-align: center;
+  margin-bottom: 28px;
 }
 
 .footer-social__list {
   display: flex;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  justify-content: space-evenly;
+  padding: 20px 45px 17px 63px;
+  border-top: 1px solid @color-grey-350;
+  border-bottom: 1px solid @color-grey-350;
 }
 
 .social__item {
@@ -27,49 +30,84 @@
 .social__link {
   position: relative;
   display: inline-block;
-  width: 22px;
-  height: 22px;
 }
 
-.social__link::after {
-  display: inline-block;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.social__icon {
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  width: 22px;
+}
+
+.social__icon-vk {
+  width: 23px;
   height: 22px;
 }
 
-.social__link-vk::after {
-  background-image: url("../img/icon/icon_vkontakte.svg");
+.social__icon-instagram {
+  width: 16px;
+  height: 16px;
 }
 
-.social__link-fb::after {
-  background-image: url("../img/icon/icon_facebook.svg");
-}
-
-.social__link-instagram::after {
-  background-image: url("../img/icon/icon_instagram.svg");
+.social__link-fb {
+  width: 22px;
+  height: 22px;
 }
 
 .copyright__link {
   display: flex;
   justify-content: space-between;
   color: @color-grey-300;
+  padding-top: 22px;
 }
 
 .copyright__text {
   line-height: 18px;
   font-size: 16px;
+  font-family: @default-font;
+  padding-top: 7px;
 }
 
 @media (min-width: @tablet-width) {
+  .footer-social {
+    padding-top: 60px;
+  }
+
   .footer-social__container {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+  }
+
+  .footer-social__list {
+    border: none;
+    padding: 0;
+  }
+
+  .social__link {
+    margin-left: 25px;
+
+    &::after {
+      width: 30px;
+      height: 32px;
+      background-size: contain;
+    }
+  }
+
+  .copyright__link {
+    padding-top: 0;
+  }
+
+  .social__icon-vk {
+    width: 30px;
+    height: 22px;
+  }
+
+  .social__icon-instagram {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__link-fb {
+    width: 28px;
+    height: 33px;
   }
 }

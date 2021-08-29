@@ -1,7 +1,7 @@
 .contacts__address {
   display: flex;
   justify-content: space-between;
-  padding: 25px 20px;
+  padding: 28px 20px 26px;
   text-align: center;
 }
 
@@ -12,16 +12,38 @@
   color: @color-grey-500;
   text-align: left;
   margin: 0;
+  width: 140px;
 }
 
-.contacts__address-adds {
+.contacts__address-add {
   line-height: 20px;
   font-family: @default-font;
   margin: 0;
+  text-align: left;
+  width: 140px;
+  font-style: normal;
+}
+
+.contacts__inner {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 57px;
+    height: 53px;
+    background-image: url("../img/icon/map pin.png");
+    background-repeat: no-repeat;
+    left: 134px;
+    top: 139px;
+    z-index: 2;
+  }
 }
 
 .contacts__map {
   display: flex;
+  margin: 0 auto;
+  background-size: cover;
 }
 
 .contacts__address-grey {
@@ -29,21 +51,42 @@
 }
 
 @media (min-width: @tablet-width) {
+  .contacts__address {
+    padding: 28px 20px 67px;
+  }
+
   .contacts__address-diler {
     font-size: 20px;
     line-height: 21px;
+    width: 210px;
+    padding-left: 51px;
+    padding-top: 40px;
   }
 
   .contacts__address-add {
     line-height: 20px;
+    width: 210px;
+    padding-right: 52px;
+    padding-top: 32px;
+    text-align: right;
   }
 
   .contacts__map {
     background: @color-grey-100;
-    min-height: 100%;
+    height: 400px;
     min-width: 100%;
     object-fit: cover;
     border: none;
+  }
+
+  .contacts__inner {
+    &::before {
+      width: 113px;
+      height: 106px;
+      left: 333px;
+      top: 147px;
+      background-size: cover;
+    }
   }
 }
 
@@ -55,34 +98,49 @@
     min-height: 400px;
   }
 
+  .contacts__inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+
   .contacts__wrapper {
-    padding: 95px 60px;
+    padding: 95px 109px;
   }
 
   .contacts__map {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 3;
-    background: #f2f2f2;
     min-height: 100%;
     min-width: 100%;
     object-fit: cover;
-    border: none;
   }
 
   .contacts__address {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 85px;
     position: relative;
     width: 570px;
     z-index: 4;
     background-color: @white;
     margin: 0;
+    padding: 66px 76px 72px 30px;
+  }
+
+  .contacts__address-diler {
+    font-size: 20px;
+    line-height: 21px;
+    padding: 0;
   }
 
   .contacts__address-grey {
     margin: 0;
+  }
+
+  .contacts__address-add {
+    text-align: left;
+    padding: 0;
   }
 }

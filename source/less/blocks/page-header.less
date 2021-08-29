@@ -1,8 +1,5 @@
-.page-header {
-  display: flex;
+.page-header--container {
   padding-top: 10px;
-  padding-bottom: 18px;
-  justify-content: space-between;
 }
 
 .page-header__logo {
@@ -15,7 +12,26 @@
   }
 }
 
+.page-header__logo-image {
+  padding-bottom: 13px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__container {
+    display: flex;
+  }
+
+  .page-header__logo-image {
+    padding-top: 13px;
+    margin-right: 72px;
+  }
+}
+
 @media (min-width: @desktop-width) {
+  .page-header__logo-image {
+    margin-right: 72px;
+  }
+
   .page-header--preview {
     position: relative;
   }
@@ -27,7 +43,9 @@
     width: 50%;
     background-image: url("../img/background/index-background-promo2x.jpeg");
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: center right;
+    background-color: @color-green-500;
+    background-size: cover;
     z-index: -1;
     top: 0;
     left: 50%;
