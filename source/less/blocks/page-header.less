@@ -1,5 +1,9 @@
-.page-header--container {
+.page-header__container {
   padding-top: 10px;
+}
+
+.page-header__catalog {
+  border-bottom: 1px solid @color-grey-350;
 }
 
 .page-header__logo {
@@ -18,7 +22,12 @@
 
 @media (min-width: @tablet-width) {
   .page-header__container {
+    padding-top: 20px;
     display: flex;
+  }
+
+  .page-header__catalog {
+    border: none;
   }
 
   .page-header__logo-image {
@@ -28,6 +37,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-header__catalog {
+    padding: 48px;
+  }
+
   .page-header__logo-image {
     margin-right: 72px;
   }

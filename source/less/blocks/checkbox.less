@@ -1,5 +1,5 @@
 .checkbox {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .checkbox__label {
@@ -8,9 +8,61 @@
   color: @black;
 }
 
+.checkbox__control + label {
+  position: relative;
+  padding-left: 46px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid @color-grey-400;
+    box-sizing: border-box;
+  }
+}
+
+.checkbox__control:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 6px;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/icon/check-mark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 @media (min-width: @tablet-width) {
+  .checkbox {
+    margin-top: 19px;
+    margin-bottom: 0;
+  }
+
   .checkbox__label {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .checkbox__control + label {
+    padding-left: 57px;
+
+    &::before {
+      left: 0;
+      top: 0;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .checkbox__control:checked + label::after {
+    top: 10px;
+    left: 7px;
+    width: 28px;
+    height: 19px;
+    background-size: cover;
   }
 }

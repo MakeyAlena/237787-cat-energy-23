@@ -9,6 +9,7 @@
   color: @black;
 }
 
+
 @media (max-width: @mobile-width-only) {
   .site-list__item {
     position: relative;
@@ -44,6 +45,12 @@
     }
   }
 
+  .site-list__catalog--current {
+    &::after {
+      bottom: 16px;
+    }
+  }
+
   .site-list__link {
     font-size: 18px;
     font-weight: 400;
@@ -58,6 +65,10 @@
     color: @white;
   }
 
+  .site-list__catalog-link {
+    color: @color-grey-500;
+  }
+
   .site-list__item {
     margin-right: 35px;
 
@@ -68,5 +79,9 @@
 
   .site-list__item--current::after {
     background: @white;
+  }
+
+  .site-list__catalog--current::after {
+    background: @color-green-600;
   }
 }

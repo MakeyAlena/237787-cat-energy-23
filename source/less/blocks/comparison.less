@@ -65,6 +65,15 @@
     background-color: @color-grey-100;
     border-bottom: 1px dotted fade(@black, 24%);
     padding: 0;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid fade(@black, 24%);
+    }
+
+    &:active {
+      border: none;
+    }
   }
 
   .comparison-controls__range {
@@ -85,6 +94,16 @@
     border-radius: 50%;
     background-color: @white;
     box-shadow: 0 1px 3px fade(@black, 10%);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 2px 4px fade(@black, 19%);
+    }
+
+    &:active {
+      border: 1px solid @color-green-500;
+      box-shadow: 0 3px 5px fade(@black, 20%);
+    }
 
     &::before {
       content: "";
