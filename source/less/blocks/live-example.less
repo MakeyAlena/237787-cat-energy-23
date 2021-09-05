@@ -1,6 +1,5 @@
 .live-example {
   background-color: @color-grey-150;
-  padding: 27px 0 36px 0;
 }
 
 .live-example__title {
@@ -68,7 +67,6 @@
 
 @media (min-width: @tablet-width) {
   .live-example {
-    padding: 44px 0 51px 0;
     background-image: linear-gradient(@white 0%, @white 59%, @color-grey-100 59%, @color-grey-100 100%);
   }
 
@@ -127,15 +125,13 @@
 
 @media (min-width: @desktop-width) {
   .live-example {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 44px 0 33px 0;
     background-image: linear-gradient(@white 0%, @white 25%, @color-grey-100 25%, @color-grey-100 100%);
   }
 
-  .live-example-wrapper {
-    margin: 0;
-    margin-left: 80px;
+  .live-example__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 68px;
   }
 
   .live-example-stats {

@@ -6,6 +6,10 @@
   font-size: 16px;
   text-transform: uppercase;
   color: @black;
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .checkbox__control + label {
@@ -24,6 +28,14 @@
   }
 }
 
+.checkbox__control + label:hover::before {
+  border-color: @color-grey-50;
+}
+
+.checkbox__control + label:disabled::before {
+  opacity: 0.3;
+}
+
 .checkbox__control:checked + label::after {
   content: "";
   position: absolute;
@@ -34,6 +46,10 @@
   background-image: url("../img/icon/check-mark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.checkbox__control:checked:disabled + label::after {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {

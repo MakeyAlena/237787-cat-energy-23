@@ -33,7 +33,7 @@
     </div>
   </header>
 
-  <main class="form">
+  <main class="form page-main__no-overflow">
     <section class="page-main page-main--form wrapper">
       <h1 class="page__title form__title">Подбор программы</h1>
       <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
@@ -43,15 +43,15 @@
           <div class="form__list">
             <div class="form__field text-field">
               <label class="text-field__label" for="name">Имя:*</label>
-              <input class="text-field__control" type="text" id="name" name="name" placeholder="Барсик" required>
+              <input class="text-field__control" type="text" id="name" name="name" placeholder="Барсик">
             </div>
             <div class="form__field text-field">
               <label class="text-field__label" for="weight">Вес (кг):*</label>
-              <input class="text-field__control" type="number" id="weight" name="weight" placeholder="7" required>
+              <input class="text-field__control" type="text" inputmode="numeric" pattern="\d*" id="weight" name="weight" placeholder="7">
             </div>
             <div class="form__field text-field">
               <label class="text-field__label" for="age">Возраст (лет):</label>
-              <input class="text-field__control" type="number" id="age" name="age" placeholder="7" required>
+              <input class="text-field__control" type="text" inputmode="numeric" pattern="\d*" id="age" name="age" placeholder="7">
             </div>
           </div>
         </fieldset>
@@ -79,13 +79,11 @@
           <div class="form__list form__contats">
             <div class="form__field text-field">
               <label class="text-field__label" for="email">E-mail:*</label>
-              <input class="text-field__control" id="email" type="email" name="email" placeholder="кuklachev@gmail.com"
-                required>
+              <input class="text-field__control" id="email" type="email" name="email" placeholder="кuklachev@gmail.com">
             </div>
             <div class="form__field text-field">
               <label class="text-field__label" for="phone">Телефон:*</label>
-              <input class="text-field__control" type="number" id="phone" name="phone" placeholder="8 (960) 900-60-90"
-                required>
+              <input class="text-field__control" type="number" id="phone" name="phone" placeholder="8 (960) 900-60-90">
             </div>
           </div>
         </fieldset>

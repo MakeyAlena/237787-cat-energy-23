@@ -7,6 +7,10 @@
   text-transform: uppercase;
   color: @color-grey-600;
   font-weight: 400;
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .radio__control + label {
@@ -26,6 +30,14 @@
   }
 }
 
+.radio__control + label:hover::before {
+  border-color: @color-grey-50;
+}
+
+.radio__control + label:disabled::before {
+  opacity: 0.3;
+}
+
 .radio__control:checked + label::after {
   content: "";
   position: absolute;
@@ -37,6 +49,9 @@
   border-radius: 50%;
 }
 
+.radio__control:checked:disabled + label::after {
+  opacity: 0.3;
+}
 
 @media (min-width: @tablet-width) {
   .radio__label {
