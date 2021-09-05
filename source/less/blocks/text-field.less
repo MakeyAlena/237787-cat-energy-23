@@ -1,22 +1,26 @@
 .text-field {
   border: none;
-  margin-bottom: 14px;
+  margin-bottom: 13px;
   display: flex;
-  align-items: center;
+  align-items: baseline;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .text-field__label {
   font-size: 16px;
   text-transform: uppercase;
-  margin-right: 10px;
+  margin-right: 14px;
 }
 
 .text-field__control {
   font-family: @custom-font;
   font-size: 16px;
   text-transform: uppercase;
-  border: 1px solid @color-grey-400;
-  padding: 13px 15px;
+  border: 1px solid @color-grey-450;
+  padding: 10px 15px;
   flex-grow: 1;
 }
 
@@ -29,15 +33,40 @@
   padding-right: 15px;
   padding-bottom: 90px;
   font-family: @custom-font;
-  border: 1px solid @color-grey-400;
+  border: 1px solid @color-grey-450;
+  margin-top: 13px;
+  margin-bottom: 26px;
 }
 
 .text-field__label--textarea {
   margin: 0;
 }
 
+.text-field__control:hover,
+.text-field__control--textarea:hover {
+  border: 1px solid @color-grey-400;
+}
+
+.text-field__control:focus,
+.text-field__control--textarea:focus {
+  border: 2px solid @color-grey-300;
+  outline: none;
+}
+
+.text-field__control:invalid,
+.text-field__control--textarea:invalid {
+  border: 2px solid @color-red-300;
+}
+
+::placeholder {
+  color: @color-grey-300;
+}
 
 @media (min-width: @tablet-width) {
+  .text-field {
+    margin-bottom: 20px;
+  }
+
   .text-field__label {
     font-size: 20px;
     line-height: 30px;
@@ -51,5 +80,7 @@
   .text-field__control--textarea {
     font-size: 20px;
     line-height: 30px;
+    margin-top: 54px;
+    margin-bottom: 78px;
   }
 }

@@ -6,32 +6,35 @@
   <title>Каталог - интернет-магазина "Кэт энерджи"</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body class="page__body">
-  <header class="page-header  wrapper">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logo/logo-mobile.svg" width="196" height="43"
-        alt="Логотип интернет-магазина Кэт энерджи" />
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-nav__list site-list list-reset">
-        <li class="site-list__item">
-          <a class="site-list__link site-list__link--catalog" href="index.html">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link site-list__link--catalog">Каталог продукции</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link site-list__link--catalog" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
+  <header class="page-header">
+    <div class="page-header__container page-header__catalog wrapper">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo/logo-mobile.svg" width="196" height="43"
+          alt="Логотип интернет-магазина Кэт энерджи" />
+      </a>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list list-reset">
+          <li class="site-list__item ">
+            <a class="site-list__link site-list__catalog-link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--current site-list__catalog--current">
+            <a class="site-list__link site-list__catalog-link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__catalog-link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <div class="catalog-page-container wrapper">
+  <main class="page-main__no-overflow">
+    <div class="catalog-page__container wrapper">
       <h1 class="page__title catalog__title">Каталог продукции</h1>
       <section class="catalog">
         <h2 class="visually-hidden">Наши товары</h2>
@@ -226,8 +229,8 @@
             <a class="button card__button" href="blank.html">Заказать</a>
           </li>
           <li class="catalog__item card">
-            <div class="card__info">
-              <h3 class="card__title">
+            <div class="card__info show-more">
+              <h3 class="card__title show-more__title">
                 <a class="card__title--link" href="blank.html">Показать еще 100500 товаров</a>
               </h3>
               <p class="show-more__description">На самом деле вкусов гораздо больше!</p>
@@ -238,7 +241,7 @@
       </section>
 
       <section class="add-product">
-        <h2 class="add-product__title">Дополнительные товары</h2>
+        <h2 class="add-product__title title-line"> <span class="add-product__green-line">Дополнительные товары</span></h2>
         <div class="add-product__container">
           <ul class="add-product__list list-reset">
             <li class="add-product__item">
@@ -286,11 +289,13 @@
     <section class="contacts">
       <div class="contacts__wrapper">
         <div class="contacts__address contacts__address-grey wrapper">
-          <p class="contacts__address-diler">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__address-diler">Приглашаем </br> к сотрудничеству дилеров!</p>
           <address class="contacts__address-add">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
-        <img class="contacts__map contacts__map-image" src="img/map-mobile.png" width="320" height="362"
-          alt="Карта проезда" />
+        <div class="contacts__inner">
+          <img class="contacts__map contacts__map-image" src="img/map-mobile.png" width="320" height="362"
+            alt="Карта проезда" />
+        </div>
       </div>
     </section>
 
@@ -304,20 +309,23 @@
           <li class="social__item">
             <a class="social__link social__link-vk" href="#">
               <span class="visually-hidden">Вконтакте</span>
+              <img class="social__icon social__icon-vk" src="img/icon/icon_vkontakte.svg" width="23" height="16">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link-instagram" href="#">
               <span class="visually-hidden">Инстаграмм</span>
+              <img class="social__icon social__icon-instagram" src="img/icon/icon_instagram.svg" width="16" height="16">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link-fb" href="#">
               <span class="visually-hidden">Фейсбук</span>
+              <img class="social__icon social__icon-vk" src="img/icon/icon_facebook.svg" width="22" height="22">
             </a>
           </li>
         </ul>
-        <div class="footer__copyright">
+        <div class="footer-social__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">HTML Academy</span>
             <img class="footer-social__logo-image" src="img/logo/htmlacademy.svg" width="27" height="34"
@@ -327,6 +335,9 @@
       </div>
     </section>
   </footer>
+
+  <script src="js/main-nav.js"></script>
+
 </body>
 
 </html>

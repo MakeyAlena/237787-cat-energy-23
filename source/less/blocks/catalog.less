@@ -1,55 +1,126 @@
-.catalog-page-container {
+.catalog-page__container {
   padding-top: 27px;
-  padding-bottom: 40px;
 }
 
 .catalog__title {
-  margin-bottom: 40px;
+  padding-bottom: 41px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    height: 1px;
+    background-color: @color-grey-200;
+    width: calc(100% + 40px);
+  }
 }
 
 .catalog__item {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  padding-bottom: 25px;
+}
 
-  &:last-child {
-    margin-bottom: 0;
+.card {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    height: 1px;
+    background-color: @color-grey-200;
+    width: calc(100% + 40px);
   }
 }
 
 .card__title {
   margin: 0;
+  margin-bottom: 10px;
+  width: 55%;
 }
 
 .card__title--link {
+  display: inline-block;
   color: @color-grey-600;
   line-height: 20px;
   font-size: 16px;
   font-weight: 400;
+  text-transform: uppercase;
+}
+
+.card__image {
+  padding-left: 36px;
+  padding-top: 33px;
 }
 
 .card__stats {
   font-size: 12px;
   line-height: 16px;
-  margin-bottom: 15px;
   font-family: @default-font;
+  border-collapse: collapse;
+}
+
+.card__info {
+  margin-left: auto;
+  padding: 20px 0;
+}
+
+.card-description__cell:last-child {
+  text-align: right;
+  width: 100%;
+}
+
+.card__button {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 0;
+}
+
+.show-more {
+  position: relative;
+  padding: 77px 0 20px;
+  width: 100%;
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon/plus.svg");
+    width: 30px;
+    height: 30px;
+    top: 25px;
+    left: 125px;
+  }
 }
 
 .show-more__title {
   color: @color-grey-500;
   font-size: 16px;
   line-height: 20px;
+  width: 100%;
 }
 
 .show-more__description {
   font-family: @default-font;
   font-size: 12px;
   line-height: 16px;
+  padding: 0;
+  margin: 0;
 }
 
 .card__button-show-more {
   background-color: @color-grey-100;
   color: @color-grey-300;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: @custom-font;
 
   &:hover {
     background-color: @color-grey-200;
@@ -64,14 +135,22 @@
 }
 
 @media (min-width: @tablet-width) {
+  .catalog-page__container {
+    padding-top: 51px;
+  }
+
   .catalog__title {
-    margin-bottom: 90px;
+    margin-bottom: 122px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .catalog__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 140px 60px;
   }
 
   .catalog__item {
@@ -80,28 +159,35 @@
     position: relative;
     flex-direction: column;
 
+    &::after {
+      display: none;
+    }
+
     &:last-child {
       background-color: @white;
+      border: 2px solid @color-grey-100;
     }
   }
 
   .card__image {
     text-align: center;
     position: absolute;
-    top: -43px;
+    bottom: 322px;
     left: 0;
-    width: 324px;
+    width: 100%;
     height: auto;
+    padding: 0;
   }
 
   .card__info {
-    margin-top: 160px;
+    margin-left: 0;
+    margin-top: 100px;
   }
 
   .card__title {
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 13px;
     width: 145px;
     font-size: 20px;
     line-height: 24px;
@@ -117,40 +203,74 @@
     width: 100%;
   }
 
-  .card-description__cell:last-child {
-    text-align: end;
+  .card-description__row {
+    border-bottom: 1px solid @color-grey-400;
+  }
+
+  .card-description__cell {
+    padding: 7px 0 9px;
+
+    &:last-child {
+      text-align: end;
+      padding: 0;
+    }
   }
 
   .card__button {
     font-size: 16px;
     line-height: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 40px;
+  }
+
+  .show-more {
+    margin: 0 auto;
+    padding: 159px 0 0;
+
+
+    &::after {
+      width: 60px;
+      height: 60px;
+      top: 51px;
+      left: 92px;
+    }
   }
 
   .show-more__title {
     font-size: 20px;
     line-height: 22px;
+    margin-bottom: 22px;
   }
 
   .show-more__description {
     font-size: 16px;
     line-height: 18px;
+    width: 167px;
+    text-align: center;
+    margin-left: 39px;
+  }
+
+  .card__button-show-more {
+    padding: 10px 0;
+    margin-bottom: 37px;
+    margin-top: auto;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .catalog-page__container {
+    padding-top: 17px;
+  }
+
   .catalog__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 80px;
+    gap: 143px 80px;
   }
 
   .catalog__item {
     background-color: @color-grey-100;
-    padding: 0 38px;
-    position: relative;
-    flex-direction: column;
+    padding: 0;
 
     &:last-child {
       background-color: @white;
@@ -158,17 +278,14 @@
   }
 
   .card__image {
-    width: 245px;
+    width: 100%;
   }
 
-  .card__info {
-    margin-top: 160px;
-  }
 
   .card__title {
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 13px;
     width: 145px;
     font-size: 20px;
     line-height: 24px;
@@ -181,25 +298,44 @@
 
   .card__stats {
     font-size: 16px;
-    width: 100%;
+    display: block;
+    padding: 0 38px 0 41px;
   }
 
-  .card-description__cell:last-child {
-    text-align: end;
+  .card-description__cell {
+    padding: 6px 0 9px;
+
+    &:last-child {
+      text-align: end;
+    }
   }
 
   .card__button {
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: auto;
+    margin-left: 38px;
+    margin-right: 39px;
+  }
+
+  .show-more {
+    margin: 0 auto;
+    padding-top: 155px;
   }
 
   .show-more__title {
     font-size: 20px;
     line-height: 22px;
+    margin-bottom: 22px;
   }
 
   .show-more__description {
     font-size: 16px;
     line-height: 18px;
+  }
+
+
+  .card__button-show-more {
+    margin-top: auto;
+    margin-left: 38px;
+    margin-right: 39px;
   }
 }

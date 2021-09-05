@@ -77,6 +77,10 @@
   text-transform: uppercase;
   padding: 19px 0 22px 0;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -89,6 +93,15 @@
   }
 }
 
+.product-category__link:hover::before,
+.product-category__link:focus::before {
+  width: 32px;
+  background-size: cover;
+}
+
+.product-category__link:active::before {
+  opacity: 0.3;
+}
 
 @media (min-width: @tablet-width) {
   .product-category {
