@@ -22,7 +22,7 @@
 
 @media (min-width: @tablet-width) {
   .page-header__container {
-    padding-top: 20px;
+    padding-top: 0;
     display: flex;
   }
 
@@ -37,8 +37,13 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-header__container {
+    padding-top: 28px;
+  }
+
   .page-header__catalog {
-    padding: 48px;
+    border: none;
+    padding-top: 28px;
   }
 
   .page-header__logo-image {
@@ -54,11 +59,10 @@
     position: absolute;
     min-height: 694px;
     width: 50%;
-    background-image: url("../img/background/index-background-promo2x.jpeg");
+    background-image: url("../img/background/index-background-desktop.jpeg");
     background-repeat: no-repeat;
     background-position: center right;
     background-color: @color-green-500;
-    background-size: cover;
     z-index: -1;
     top: 0;
     left: 50%;

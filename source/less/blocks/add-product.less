@@ -12,17 +12,6 @@
   margin-bottom: 35px;
   margin-top: 0;
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 50%;
-  //   right: 0;
-  //   width: 100vw;
-  //   height: 2px;
-  //   background: @color-green-500;
-  //   z-index: -1;
-  // }
-
   &::after {
     content: "";
     position: absolute;
@@ -196,6 +185,11 @@
 }
 
 @media (min-width: @desktop-width) {
+  .add-product {
+    padding-bottom: 86px;
+    padding-top: 82px;
+  }
+
   .add-product__container {
     display: grid;
     grid-template-columns: 1fr 245px;
