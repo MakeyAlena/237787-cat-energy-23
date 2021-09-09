@@ -64,7 +64,7 @@
 }
 
 .add-product__gift {
-  background-image: url("../img/background/gift-catalog.png");
+  background-image: url("../img/background/gift-catalog-mobile.png");
   background-color: @color-green-500;
   background-repeat: no-repeat;
   min-height: 289px;
@@ -72,6 +72,11 @@
   margin-top: 35px;
   margin-bottom: 35px;
   position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/gift-catalog-mobile@2x.png");
+    background-size: contain;
+  }
 
   &::before {
     content: "";
@@ -169,6 +174,12 @@
     background-position: center;
     min-height: 200px;
     margin-top: 65px;
+    background-image: url("../img/background/gift-catalog-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/gift-catalog-tablet@2x.png");
+      background-size: contain;
+    }
 
     &::before {
       left: 79px;
@@ -235,6 +246,12 @@
   .add-product__gift {
     min-height: 289px;
     margin: 0;
+    background-image: url("../img/background/gift-catalog-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/gift-catalog-desktop@2x.png");
+      background-size: contain;
+    }
   }
 
   .add-product__text {
