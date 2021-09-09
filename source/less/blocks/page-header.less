@@ -62,9 +62,14 @@
     background-image: url("../img/background/index-background-desktop.jpeg");
     background-repeat: no-repeat;
     background-position: center right;
-    background-color: @color-green-500;
+    background-color: @color-green-700;
     z-index: -1;
     top: 0;
     left: 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/index-background-desktop@2x.jpeg");
+      background-size: contain;
+    }
   }
 }

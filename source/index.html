@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Кэт энерджи</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="icon" type="image/png" href="img/favicon/32.png">
@@ -52,7 +52,7 @@
           <source type="image/webp" media="(min-width: 1280px)"
             srcset="img/promo/promo-cat-food-desktop.webp 1x, img/promo/promo-cat-food-desktop@2x.webp">
           <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/promo/promo-cat-food-tablet.webp 1x, img/promo/promo-cat-food-tablet.@2x.webp 2x">
+            srcset="img/promo/promo-cat-food-tablet.webp 1x, img/promo/promo-cat-food-tablet@2x.webp 2x">
           <source type="image/webp"
             srcset="img/promo/promo-cat-food-mobile.webp 1x, img/promo/promo-cat-food-mobile@2x.webp 2x">
           <source media="(min-width: 1280px)"
@@ -146,17 +146,21 @@
         <div class="сomparison">
           <div class="comparison-demo">
             <picture>
-              <source media="(min-width: 768px)"
-                srcset="img/cats/cat-skinny.png 1x, img/cats/cat-skinny@2x.png 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/cats/cat-skinny.webp 1x, img/cats/cat-skinny@2x.webp 2x">
+              <source type="image/webp" srcset="img/cats/after-mobile.webp 1x, img/cats/after-mobile@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/cats/cat-skinny.png 1x, img/cats/cat-skinny@2x.png 2x">
               <img class="comparison-demo__before" src="img/cats/after-mobile.png" width="251" height="240"
-              srcset="img/cats/after-mobile @2x.png 2x"
-                alt="Кот после питания кэт энерджи" />
+                srcset="img/cats/after-mobile @2x.png 2x" alt="Кот после питания кэт энерджи" />
             </picture>
             <picture>
-              <source media="(min-width: 768px)"
-                srcset="img/cats/cat-fat.png 1x, img/cats/cat-fat@2x.png 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/cats/cat-fat.webp 1x, img/cats/cat-fat@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/cats/cat-before-mobile.webp 1x, img/cats//before-mobile @2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/cats/cat-fat.png 1x, img/cats/cat-fat@2x.png 2x">
               <img class="comparison-demo__after" src="img/cats/cat-before-mobile.png" width="311" height="232"
-              srcset="img/cats/before-mobile @2x.png 2x" alt="Корм Кэт энерджи" />
+                srcset="img/cats/before-mobile @2x.png 2x" alt="Корм Кэт энерджи" />
             </picture>
           </div>
           <div class="comparison-controls slider-controls">
@@ -179,7 +183,7 @@
           <address class="contacts__address-add">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
         <div class="contacts__inner">
-          <img class="contacts__map contacts__map-image" src="img/map-mobile.png" width="320" height="362"
+          <img class="contacts__map contacts__map-image" src="img/map/map-mobile.png" width="320" height="362"
             alt="Карта проезда" />
         </div>
       </div>
@@ -188,7 +192,7 @@
     <section class="footer-social">
       <div class="footer-social__container wrapper">
         <a class="footer-social__logo">
-          <img class="footer-social__logo-image" src="img/logo/footer-logo.svg" width="128" height="24"
+          <img class="footer-social__logo-image" src="img/icon/footer-logo.svg" width="128" height="24"
             alt="Логотип футера интернет-магазина Кэт энерджи " />
         </a>
         <ul class="footer-social__list social list-reset">
@@ -214,7 +218,7 @@
         <div class="footer-social__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">HTML Academy</span>
-            <img class="footer-social__logo-image" src="img/logo/htmlacademy.svg" width="27" height="34"
+            <img class="footer-social__logo-image" src="img/icon/htmlacademy.svg" width="27" height="34"
               alt="Логотип HTML Academy" />
           </a>
         </div>
@@ -222,7 +226,7 @@
     </section>
   </footer>
 
-  <script src="js/main-nav.js"></script>
+  <script src="js/main-nav.min.js"></script>
 
 </body>
 
