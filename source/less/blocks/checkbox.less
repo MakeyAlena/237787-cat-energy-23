@@ -43,7 +43,7 @@
   left: 6px;
   width: 18px;
   height: 14px;
-  background-image: url("../img/icon/check-mark.svg");
+  background-image: url("../img/svg-icons/check-mark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -54,7 +54,7 @@
 
 @media (min-width: @tablet-width) {
   .checkbox {
-    margin-top: 19px;
+    margin-top: 0;
     margin-bottom: 0;
   }
 
@@ -68,17 +68,38 @@
 
     &::before {
       left: 0;
-      top: 0;
+      top: -5px;
       width: 40px;
       height: 40px;
     }
   }
 
   .checkbox__control:checked + label::after {
-    top: 10px;
+    top: 5px;
     left: 7px;
     width: 28px;
     height: 19px;
     background-size: cover;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .checkbox {
+    margin-top: 0;
+  }
+
+  .form__list--checkbox {
+    margin-top: 0;
+    margin-bottom: 34px;
+  }
+
+  .checkbox__control + label {
+    &::before {
+      top: -5px;
+    }
+  }
+
+  .checkbox__control:checked + label::after {
+    top: 5px;
   }
 }

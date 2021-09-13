@@ -30,13 +30,6 @@
     "build": "gulp build",
     "html": "gulp html",
     "styles": "gulp styles",
-    "scripts": "gulp scripts",
-    "optimizeImages": "gulp optimizeImages",
-    "copyImages": "gulp copyImages",
-    "createWebp": "gulp createWebp",
-    "sprite": "gulp sprite",
-    "copy": "gulp copy",
-    "clean": "gulp clean",
     "start": "gulp"
   },
   "browserslist": [
