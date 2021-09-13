@@ -1,0 +1,41 @@
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  color: @color-grey-300;
+  padding-top: 22px;
+}
+
+.copyright__text {
+  line-height: 18px;
+  font-size: 16px;
+  font-family: @default-font;
+  padding-top: 7px;
+  margin-right: 14px;
+}
+
+.copyright__logo {
+  &:hover,
+  &:focus {
+    color: @color-green-500;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    margin-top: -6px;
+  }
+
+  .copyright__link {
+    padding-top: 0;
+  }
+
+  .copyright__text {
+    margin-right: 24px;
+    align-self: center;
+    padding-top: 0;
+  }
+}
