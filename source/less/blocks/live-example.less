@@ -32,14 +32,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
-  margin-bottom: 22px;
+  margin-bottom: 19px;
 }
 
 .live-example-stats__number {
   font-size: 24px;
   line-height: 24px;
   color: @black;
-  padding: 16px 15px 22px;
+  padding: 14px 15px 16px;
   border: 1px solid @color-grey-400;
   border-radius: 3px;
   align-items: center;
@@ -51,9 +51,10 @@
   font-family: @default-font;
   background: @color-grey-150;
   color: @color-grey-300;
-  margin-top: -8px;
+  margin-top: -9px;
   padding: 0 5px;
   align-self: center;
+  width: 86px;
 }
 
 .live-example-stats__total {
@@ -69,7 +70,7 @@
 
 @media (min-width: @tablet-width) {
   .live-example {
-    background-image: linear-gradient(@white 0%, @white 59%, @color-grey-100 59%, @color-grey-100 100%);
+    background-image: linear-gradient(@white 0%, @white 54%, @color-grey-100 54%, @color-grey-100 100%);
     padding-bottom: 69px;
   }
 
@@ -83,12 +84,14 @@
     line-height: 60px;
     font-weight: 400;
     margin-bottom: 64px;
+    margin-top: 17px;
   }
 
   .live-example__description {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 53px;
+    padding-right: 6px;
   }
 
   .live-example-stats__item {
@@ -103,14 +106,15 @@
   .live-example-stats__number {
     font-size: 30px;
     line-height: 37px;
-    padding: 16px 30px 22px;
+    padding: 14px 29px 19px;
   }
 
   .live-example-stats__description {
     font-size: 14px;
     line-height: 14px;
     background-color: @white;
-    margin-top: -10px;
+    margin-top: -9px;
+    width: auto;
   }
 
   .live-example-stats__total {
@@ -121,15 +125,15 @@
   }
 
   .live-example-stats__sum {
-    padding-top: 7px;
+    padding-top: 9px;
     display: block;
   }
 }
 
 @media (min-width: @desktop-width) {
   .live-example {
-    background-image: linear-gradient(@white 0%, @white 25%, @color-grey-100 25%, @color-grey-100 100%);
-    padding-bottom: 22px;
+    background-image: linear-gradient(@white 0%, @white 29%, @color-grey-100 25%, @color-grey-100 100%);
+    padding-bottom: 33px;
   }
 
   .live-example__wrapper {
@@ -143,12 +147,12 @@
 
   .live-example__title {
     margin-bottom: 147px;
-    padding-top: 45px;
+    padding-top: 35px;
   }
 
   .live-example__description {
-    width: 435px;
-    margin-bottom: 69px;
+    width: 445px;
+    margin-bottom: 68px;
     text-align: left;
   }
 
@@ -164,6 +168,7 @@
     text-align: left;
     width: 100%;
     display: flex;
+    margin-top: 6px;
   }
 
   .live-example-stats__sum {

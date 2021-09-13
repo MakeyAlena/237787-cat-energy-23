@@ -1,15 +1,20 @@
+.comparison-demo {
+  margin-bottom: 25px;
+}
+
 .comparison-demo__before {
   display: none;
 }
 
 .comparison-demo__after {
   display: block;
+  position: relative;
   margin: 0 auto;
-  height: 232px;
-}
-
-.comparison-demo {
-  margin-bottom: 4px;
+  height: 239px;
+  width: 320px;
+  left: -3px;
+  top: -9px;
+  object-fit: cover;
 }
 
 .comparison-controls {
@@ -52,12 +57,40 @@
 }
 
 @media (min-width: @tablet-width) {
-  .comparison-demo__after {
-    display: block;
+  .comparison-demo {
+    position: relative;
+    display: flex;
+    max-width: inherit;
+    height: 560px;
+    width: auto;
+    margin-top: 57px;
+    margin-bottom: -30px;
+  }
+
+  .comparison-demo__img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: 100%;
     margin: 0 auto;
-    width: 675px;
-    height: auto;
-    margin-top: 64px;
+    height: 470px;
+  }
+
+  .comparison-demo__after {
+    clip-path: inset(0 50% 0 0);
+    top: -4px;
+    width: auto;
+    left: 2px;
+    height: 520px;
+  }
+
+  .comparison-demo__before {
+    display: block;
+    clip-path: inset(0 0 0 45%);
+    top: -4px;
+    width: auto;
+    left: 55px;
+    height: 520px;
   }
 
   .comparison-button {
@@ -83,12 +116,13 @@
     background-color: @color-grey-400;
     border: 0;
     margin: 0 23px;
+    top: -5px;
   }
 
   .comparison-controls__scale {
     position: relative;
-    top: -15px;
-    left: 46%;
+    top: -14px;
+    left: 199px;
     width: 34px;
     height: 34px;
     border: 1px solid #cdcdcd;
@@ -122,10 +156,23 @@
 @media (min-width: @desktop-width) {
   .comparison-demo {
     margin-top: 65px;
+    top: -90px;
+    margin-bottom: -75px;
   }
 
   .comparison-demo__after {
-    margin-top: -43px;
-    margin-left: -43px;
+    clip-path: inset(0 45% 0 0);
+    top: 21px;
+    left: -13px;
+  }
+
+  .comparison-demo__before {
+    clip-path: inset(0 0 0 50%);
+    left: 37px;
+    top: 20px;
+  }
+
+  .comparison-controls {
+    padding-left: 38px;
   }
 }
