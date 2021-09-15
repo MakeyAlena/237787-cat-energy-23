@@ -70,7 +70,7 @@
 
 @media (min-width: @tablet-width) {
   .live-example {
-    background-image: linear-gradient(@white 0%, @white 54%, @color-grey-100 54%, @color-grey-100 100%);
+    background-image: linear-gradient(to bottom, @white 602px, @color-grey-100 602px);
     padding-bottom: 69px;
   }
 
@@ -132,7 +132,8 @@
 
 @media (min-width: @desktop-width) {
   .live-example {
-    background-image: linear-gradient(@white 0%, @white 29%, @color-grey-100 25%, @color-grey-100 100%);
+    // background-image: linear-gradient(to bottom, @white 180px, @color-grey-100 180px);
+    background-image: linear-gradient(to bottom, @white 189px, transparent 189px), linear-gradient(to right, @color-grey-100 calc(50% + 325px), @color-grey-150 calc(50% + 325px));
     padding-bottom: 33px;
   }
 

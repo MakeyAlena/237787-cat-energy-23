@@ -1,6 +1,6 @@
 .step {
   padding-top: 7px;
-  padding-bottom: 2px;
+  padding-bottom: 20px;
 }
 
 .step__title {
@@ -48,6 +48,10 @@
 .step__description {
   font-family: @default-font;
   margin-left: 80px;
+
+  & br {
+    display: none;
+  }
 }
 
 
@@ -97,6 +101,10 @@
   .step__description {
     margin-left: 0;
     padding-right: 70px;
+
+    & br {
+      display: block;
+    }
   }
 }
 
@@ -114,9 +122,9 @@
 
   .step__description {
     padding-right: 0;
-  }
 
-  .step__description br {
-    display: none;
+    & br {
+      display: block;
+    }
   }
 }
