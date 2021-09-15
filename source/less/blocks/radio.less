@@ -1,5 +1,5 @@
 .radio {
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 }
 
 .radio__label {
@@ -42,7 +42,7 @@
   content: "";
   position: absolute;
   top: 6px;
-  left: 8px;
+  left: 7px;
   width: 14px;
   height: 14px;
   background-color: @color-green-500;
@@ -54,6 +54,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .radio {
+    margin-bottom: 22px;
+  }
+
   .radio__label {
     font-size: 20px;
     line-height: 30px;
@@ -75,5 +79,16 @@
     height: 18px;
     top: 7px;
     left: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .radio__control + label::before {
+    left: 7px;
+    top: -4px;
+  }
+
+  .radio__control:checked + label::after {
+    top: 6px;
   }
 }
