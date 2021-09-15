@@ -13,7 +13,7 @@
 .text-field__icon {
   position: absolute;
   top: 15px;
-  right: 16px;
+  right: 13px;
 
   &:active,
   &:focus {
@@ -28,7 +28,7 @@
 .text-field__label {
   font-size: 16px;
   text-transform: uppercase;
-  margin-right: 14px;
+  margin-right: 10px;
 }
 
 .text-field__control {
@@ -36,7 +36,7 @@
   font-size: 16px;
   text-transform: uppercase;
   border: 1px solid @color-grey-450;
-  padding: 10px 11px;
+  padding: 10px 15px;
   flex-grow: 1;
 }
 
@@ -51,7 +51,7 @@
   font-family: @custom-font;
   border: 1px solid @color-grey-450;
   margin-top: 18px;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 }
 
 .text-field__label--textarea {
@@ -65,13 +65,15 @@
 
 .text-field__control:focus,
 .text-field__control--textarea:focus {
-  border: 2px solid @color-grey-300;
+  border: 1px solid @color-grey-300;
+  box-shadow: 0 0 0 1px @color-grey-300;
   outline: none;
 }
 
 .text-field__control:invalid,
 .text-field__control--textarea:invalid {
   border: 2px solid @color-red-300;
+  box-shadow: 0 0 0 1px @color-red-300;
 }
 
 ::placeholder {
@@ -91,12 +93,17 @@
   .text-field__label {
     font-size: 20px;
     line-height: 30px;
+    margin-right: 20px;
+  }
+
+  .text-field__label--textarea {
+    margin: 0;
   }
 
   .text-field__control {
     font-size: 20px;
     line-height: 30px;
-    padding: 10px 7px 10px 20px;
+    padding: 10px 3px 10px 14px;
   }
 
   .text-field__control--textarea {
@@ -124,6 +131,11 @@
   }
 
   .text-field__control {
-    padding: 10px 16px;
+    padding: 10px 20px;
+  }
+
+  .text-field__icon {
+    right: 17px;
+    top: 18px;
   }
 }
