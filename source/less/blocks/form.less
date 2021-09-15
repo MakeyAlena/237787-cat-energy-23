@@ -27,8 +27,9 @@
   line-height: 26px;
   color: @black;
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   margin-top: 0;
+  padding: 0;
 
   &::after {
     content: "";
@@ -43,9 +44,14 @@
   }
 }
 
+.form__group--line {
+  width: 204px;
+}
+
 .form__group--green-line {
+  display: inline-block;
   background-color: @white;
-  padding-right: 22px;
+  padding-right: 23px;
 }
 
 .form__group--info {
@@ -54,7 +60,7 @@
 
 .form__group--target {
   border: 1px solid #ededed;
-  padding: 28px 20px 2px;
+  padding: 28px 20px 0;
   margin-left: -20px;
   margin-right: -20px;
 }
@@ -93,7 +99,7 @@
   }
 
   .form__title {
-    margin-top: 50px;
+    margin-top: 52px;
     margin-bottom: 54px;
   }
 
@@ -114,7 +120,7 @@
   }
 
   .form__group--contats {
-    margin-top: 73px;
+    margin-top: 75px;
     padding: 14px 0 68px;
   }
 
@@ -122,9 +128,10 @@
   .form__group--title {
     font-size: 36px;
     line-height: 36px;
-    padding-right: 40px;
+    padding-right: 32px;
     margin-bottom: 61px;
-    margin-left: -40px;
+    margin-left: -32px;
+
 
     &::after {
       top: 22px;
@@ -136,10 +143,14 @@
     }
   }
 
+  .form__group--line {
+    width: 100%;
+  }
+
   .form__group--green-line {
     background-color: @white;
-    padding-right: 22px;
-    padding-left: 30px;
+    padding-right: 42px;
+    padding-left: 31px;
   }
 
   .form__list--checkbox {
@@ -171,15 +182,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
-    margin-bottom: 79px;
+    margin-bottom: 82px;
   }
 
   .form__title {
     margin-top: 64px;
+    margin-bottom: 56px;
   }
 
   .form__description {
-    margin-bottom: 67px;
+    margin-bottom: 65px;
   }
 
   .form__group {
@@ -192,15 +204,20 @@
 
     &--target {
       grid-column: ~"2 / -1";
-      margin-bottom: 68px;
+      margin-bottom: 69px;
+      padding: 30px 20px 9px;
     }
   }
 
   .form__group--title {
     padding-right: 0;
     margin-left: -40px;
-    padding-left: 10px;
+    padding-left: 0;
     margin-bottom: 60px;
+
+    &::after {
+      top: 23px;
+    }
   }
 
   .form__group--green-line {
@@ -228,7 +245,8 @@
   .form__button {
     width: 100%;
     grid-column: ~"1 / 2";
-    margin-top: 32px;
+    margin-top: 34px;
+    padding: 26px 65px;
   }
 
   .form__required-fields {
@@ -238,5 +256,6 @@
     align-self: end;
     font-size: 16px;
     line-height: 16px;
+    margin-bottom: 18px;
   }
 }
