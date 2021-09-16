@@ -1,12 +1,12 @@
-.comparison-demo {
+.comparison__demo {
   margin-bottom: 25px;
 }
 
-.comparison-demo__before {
+.comparison__demo-before {
   display: none;
 }
 
-.comparison-demo__after {
+.comparison__demo-after {
   display: block;
   position: relative;
   margin: 0 auto;
@@ -17,7 +17,7 @@
   object-fit: cover;
 }
 
-.comparison-controls {
+.comparison__controls {
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -36,7 +36,7 @@
   padding: 0 12px 0 17px;
 }
 
-.comparison-controls__range {
+.comparison__controls-range {
   width: 84px;
   height: 14px;
   border: 1px solid @color-grey-400;
@@ -46,7 +46,7 @@
   margin-left: 6px;
 }
 
-.comparison-controls__scale {
+.comparison__controls-scale {
   width: 35px;
   height: 6px;
   background-color: @color-green-500;
@@ -57,7 +57,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .comparison-demo {
+  .comparison__demo {
     position: relative;
     display: flex;
     max-width: inherit;
@@ -67,7 +67,7 @@
     margin-bottom: -30px;
   }
 
-  .comparison-demo__img {
+  .comparison__demo-img {
     position: absolute;
     left: 0;
     right: 0;
@@ -76,7 +76,7 @@
     height: 470px;
   }
 
-  .comparison-demo__after {
+  .comparison__demo-after {
     clip-path: inset(0 50% 0 0);
     top: -4px;
     width: auto;
@@ -84,7 +84,7 @@
     height: 520px;
   }
 
-  .comparison-demo__before {
+  .comparison__demo-before {
     display: block;
     clip-path: inset(0 0 0 45%);
     top: -4px;
@@ -110,7 +110,7 @@
     }
   }
 
-  .comparison-controls__range {
+  .comparison__controls-range {
     width: 428px;
     height: 6px;
     background-color: @color-grey-400;
@@ -119,7 +119,7 @@
     top: -5px;
   }
 
-  .comparison-controls__scale {
+  .comparison__controls-scale {
     position: relative;
     top: -14px;
     left: 199px;
@@ -154,25 +154,25 @@
 }
 
 @media (min-width: @desktop-width) {
-  .comparison-demo {
+  .comparison__demo {
     margin-top: 65px;
     top: -90px;
     margin-bottom: -75px;
   }
 
-  .comparison-demo__after {
+  .comparison__demo-after {
     clip-path: inset(0 45% 0 0);
     top: 21px;
     left: -13px;
   }
 
-  .comparison-demo__before {
+  .comparison__demo-before {
     clip-path: inset(0 0 0 50%);
     left: 37px;
     top: 20px;
   }
 
-  .comparison-controls {
+  .comparison__controls {
     padding-left: 38px;
   }
 }

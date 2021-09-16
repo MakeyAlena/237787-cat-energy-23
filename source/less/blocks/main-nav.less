@@ -72,7 +72,12 @@
 
 
 @media (max-width: @mobile-width-only) {
-  .main-nav--opened .site-list__item::after {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--opened .site-list__item::after,
+  .main-nav--closed .site-list__item::after {
     content: "";
     position: absolute;
     right: -20px;
@@ -84,12 +89,12 @@
     margin: 0 auto;
   }
 
-  .main-nav--closed .site-list__item {
+  .main-nav--nojs .main-nav__toggle {
     display: none;
   }
 
-  .main-nav--nojs .main-nav__toggle {
-    display: none;
+  .main-nav--nojs .site-list__item {
+    display: block;
   }
 }
 

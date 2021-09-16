@@ -35,7 +35,7 @@
           <li class="site-list__item">
             <a class="site-list__link site-list__catalog-link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item site-list__item--current site-list__catalog--current">
+          <li class="site-list__item site-list__item--current site-list__item--catalog-current">
             <a class="site-list__link site-list__catalog-link" href="form.html">Подбор программы</a>
           </li>
         </ul>
@@ -43,9 +43,9 @@
     </div>
   </header>
 
-  <main class="form page-main__no-overflow">
+  <main class="form page-main page-main--no-overflow">
     <section class="page-main page-main--form wrapper">
-      <h1 class="page__title form__title">Подбор программы</h1>
+      <h1 class="page-main__title form__header">Подбор программы</h1>
       <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="form__inner" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="form__group form__group--info">
@@ -90,8 +90,8 @@
         </fieldset>
 
         <fieldset class="form__group form__group--contats">
-          <legend class="form__group--title">
-            <span class="form__group--green-line form__group--line">Контактные данные (владельца кота)</span>
+          <legend class="form__title">
+            <span class="form__green-line form__line">Контактные данные (владельца кота)</span>
           </legend>
           <div class="form__list form__contats">
             <div class="form__field text-field">
@@ -112,21 +112,21 @@
         </fieldset>
 
         <fieldset class="form__group">
-          <legend class="form__group--title form__group--title">
-            <span class="form__group--green-line">Комментарий </span>
+          <legend class="form__title">
+            <span class="form__green-line">Комментарий </span>
           </legend>
           <div class="form__field text-field">
             <label class="text-field__label text-field__label--textarea" for="comment-field"></label>
-            <textarea class="text-field__control--textarea" name="comment" id="comment-field"
+            <textarea class="text-field__control-textarea" name="comment" id="comment-field"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
 
         <fieldset class="form__group">
-          <legend class="form__group--title">
-            <span class="form__group--green-line">Дополнительно</span>
-            </legend>
-          <ul class="form__list--checkbox list-reset">
+          <legend class="form__title">
+            <span class="form__green-line">Дополнительно</span>
+          </legend>
+          <ul class="form__list-checkbox list-reset">
             <li class="form__field checkbox">
               <input class="checkbox__control visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
               <label class="checkbox__label" for="sweetener">Cахарозаменитель</label>
@@ -156,29 +156,26 @@
       <div class="contacts__wrapper">
         <div class="contacts__address contacts__address-grey wrapper">
           <p class="contacts__address-diler">Приглашаем <br> к сотрудничеству дилеров!</p>
-          <address class="contacts__address-add">ул. Большая Конюшенная, д.  19/8
+          <address class="contacts__address-add">ул. Большая Конюшенная, д. 19/8
             <span class="contacts__address-add-city">Санкт-Петербург</span>
           </address>
         </div>
         <div class="contacts__inner">
-          <iframe class="contacts__map contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!!1m18!1m12!1m3!1d1998.6037872533261!2d30.320858715741373!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1631200788272!5m2!1sru!2sby"
-          width="320" height="362"></iframe>
+          <iframe class="contacts__map contacts__map-iframe"
+            src="https://www.google.com/maps/embed?pb=!!1m18!1m12!1m3!1d1998.6037872533261!2d30.320858715741373!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1631200788272!5m2!1sru!2sby"
+            width="320" height="362"></iframe>
           <picture>
             <source type="image/webp" media="(min-width: 1280px)"
-            srcset="img/map/map-desktop.webp 1x, img/map/map-desktop.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/map/map-tablet.webp 1x, img/map/map-tablet@2x.webp 2x">
-          <source type="image/webp"
-            srcset="img/map/map-mobile.webp 1x, img/map/map-mobile@2x.webp 2x">
-          <source media="(min-width: 1280px)"
-            srcset="img/map/map-desktop.png 1x, img/map/map-desktop@2x.png 2x">
-          <source media="(min-width: 768px)"
-            srcset="img/map/map-tablet.png 1x, img/map/map-tablet@2x.png 2x">
+              srcset="img/map/map-desktop.webp 1x, img/map/map-desktop.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/map/map-tablet.webp 1x, img/map/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map/map-mobile.webp 1x, img/map/map-mobile@2x.webp 2x">
+            <source media="(min-width: 1280px)" srcset="img/map/map-desktop.png 1x, img/map/map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/map/map-tablet.png 1x, img/map/map-tablet@2x.png 2x">
 
-          <img class="contacts__map contacts__map-image" src="img/map/map-mobile.png"
-          srcset="img/map/map-mobile@2x.png 2x"
-            alt="Карта проезда" />
-            </picture>
+            <img class="contacts__map contacts__map-image" src="img/map/map-mobile.png"
+              srcset="img/map/map-mobile@2x.png 2x" alt="Карта проезда" />
+          </picture>
         </div>
       </div>
     </section>

@@ -24,13 +24,18 @@
     top: 0;
     width: 30px;
     height: 30px;
-    border: 1px solid @color-grey-400;
+    border: 1px solid;
+    border-color: @color-grey-400;
     box-sizing: border-box;
   }
 }
 
-.checkbox__control + label:hover::before {
+.checkbox__control:hover + label::before {
   border-color: @color-grey-50;
+}
+
+.checkbox__control:focus + label::before {
+  border-color: @color-grey-300;
 }
 
 .checkbox__control + label:disabled::before {

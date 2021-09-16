@@ -30,8 +30,12 @@
   }
 }
 
-.radio__control + label:hover::before {
+.radio__control:hover + label::before {
   border-color: @color-grey-50;
+}
+
+.radio__control:focus + label::before {
+  border-color: @color-grey-300;
 }
 
 .radio__control + label:disabled::before {
